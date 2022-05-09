@@ -160,6 +160,7 @@ function listar() {
             });
             document.querySelector("#detalle_facturacion").innerHTML = html;
             calcular();
+
         }
     });
 }
@@ -266,7 +267,6 @@ function deleteDetalle(id) {
         }
     });
 }
-
 function calcular() {
     // obtenemos todas las filas del tbody
     var filas = document.querySelectorAll("#tblDetalle tbody tr");
@@ -280,14 +280,14 @@ function calcular() {
         var columnas = e.querySelectorAll("td");
 
         // obtenemos los valores de la cantidad y importe
-        var importe = parseFloat(columnas[6].textContent);
+        var importe = parseFloat(columnas[3].textContent);
 
         total += importe;
     });
 
     // mostramos la suma total
     var filas = document.querySelectorAll("#tblDetalle tfoot tr td");
-    filas[1].textContent = total.toFixed(2);
+    filas[1].textContent = total.toFixed(1);
 }
 
 function generarPDF(cliente, id_venta) {

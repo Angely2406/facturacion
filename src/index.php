@@ -85,19 +85,16 @@ include_once "includes/header.php";
                         <th>Id</th>
                         <th>Descripción</th>
                         <th>Cantidad</th>
-                        <th>Aumento<th>
                         <th>Precio</th>
                         <th>Precio Total</th>
                         <th>Accion</th>
                     </tr>
                 </thead>
-                <tbody id="detalle_venta">
+                <tbody id="detalle_facturacion">
 
                 </tbody>
                 <tfoot>
                     <tr class="font-weight-bold">
-                        <td>Total Pagar</td>
-                        <td></td>
                     </tr>
                 </tfoot>
             </table>
